@@ -1,6 +1,6 @@
 const allure = require("allure-commandline");
 exports.config = {
-  specs: ["..//src/test/*.js"],
+  specs: ["./src/spec/*.js"],
   services: [
     [
       "selenium-standalone",
@@ -196,7 +196,6 @@ exports.config = {
 
       generation.on("exit", function (exitCode) {
         clearTimeout(generationTimeout);
-
         if (exitCode !== 0) {
           return reject(reportError);
         }

@@ -5,6 +5,7 @@ module.exports = class AbstractPage {
 
   async waitForElementDisplayed(element) {
     await $(element).waitForDisplayed(5000);
+    
   }
 
   async inputTextInElement(element, value) {

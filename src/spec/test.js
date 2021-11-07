@@ -1,6 +1,6 @@
 const loginPage = require("../main/pageObject/LoginPage");
 const Fixture = require("../main/model/Fixture");
-const data = require("../test/resource/testdata.json");
+const data = require("./resource/testdata.json");
 const assert = require("assert");
 
 describe("Test", () => {
