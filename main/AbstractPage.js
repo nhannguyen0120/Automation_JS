@@ -16,11 +16,11 @@ module.exports = class AbstractPage {
     return text;
   }
 
-  async isElementDisplayed(element){
+  async isElementDisplayed(element) {
     return await $(element).isDisplayed();
   }
 
-  async open(url){
+  async open(url) {
     return browser.url(url);
   }
-}
+};
