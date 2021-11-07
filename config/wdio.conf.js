@@ -1,6 +1,6 @@
 const allure = require("allure-commandline");
 exports.config = {
-  specs: ["..//test/*.js"],
+  specs: ["..//src/test/*.js"],
   services: [
     [
       "selenium-standalone",
